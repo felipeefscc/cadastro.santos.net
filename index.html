@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./img/logo.png"  width="10" >
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Cadastro | Santos.Net</title>
+</head>
+
+<body>
+
+    <script src="./js/script.js"></script>
+
+    <div class="container">
+        <div class="form-image">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="form">
+            <form autocomplete="off">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Painel de Cadastro</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome Completo:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cpf">CPF:</label>
+                        <input id="cpf" type="text" name="cpf" maxlength="11" placeholder="Digite seu CPF." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="date">Data de Nascimento:</label>
+                        <input id="date" type="date" name="date" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="telefone">Telefone:</label>
+                        <input id="telefone" type="text" name="telefone" maxlength="13" placeholder="(xx) xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="celular">Celular:</label>
+                        <input id="celular" type="text" name="celular" placeholder="(xx) xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco">Endereço:</label>
+                        <input id="endereco" type="text" name="endereco" placeholder="Digite seu endereço" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="bairro">Bairro:</label>
+                        <input id="bairro" type="text" name="bairro" placeholder="Digite sua senha novamente" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cep">Cep:</label>
+                        <input id="cep" type="text" name="cep" maxlength="8" placeholder="Digite sua senha" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="complemento">Complemento:</label>
+                        <input id="complemento" type="text" name="complemento" placeholder="Digite sua senha novamente" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="planos"><b>Planos Fibra Optica:</b></label>
+                        <select id="planos" name="planos">
+                            <option value="20MB">20MB - R$49,90</option>
+                            <option value="35MB">35MB - R$59,90</option>
+                            <option value="50MB">50MB - R$69,90</option>
+                            <option value="100MB">100MB - R$79,90</option>
+                            <option value="300MB">300MB - R$99,90</option>
+                            <option value="500MB">500MB - R$129,90</option>
+                        </select>
+                        <br>
+                        
+    
+                        <label for="vencimento""><b>Data de Vencimento:</b></label>
+                        <select id="vencimento" name="vencimento">
+                            <option value="05">Dia - 05</option>
+                            <option value="10">Dia - 10</option>
+                            <option value="15">Dia - 15</option>
+                            <option value="20">Dia - 20</option>
+                            <option value="25">Dia - 25</option>
+                            <option value="30">Dia - 30</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                
+
+                <div class="confirm-button">
+                    <input type="submit" name="submit"  id="submit" value="Cadastrar" onclick="sendwpp();funcao1()" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function funcao1()
+            {
+        alert("Dados enviados com sucesso!");
+            }
+    </script>
+</body>
+</html>

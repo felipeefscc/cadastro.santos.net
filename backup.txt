@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./img/logo.png"  width="10" >
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Cadastro | Santos.Net</title>
+</head>
+
+<body>
+
+    <script src="./js/script.js"></script>
+
+    <div class="container">
+        <div class="form-image">
+            <img src="./img/logao.png" alt="">
+        </div>
+        <div class="form">
+            <form autocomplete="off">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Painel de Cadastro</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome Completo:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cpf">CPF:</label>
+                        <input id="cpf" type="text" name="cpf" maxlength="11" placeholder="Digite seu CPF." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="date">Data de Nascimento:</label>
+                        <input id="date" type="date" name="date" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="telefone">Telefone:</label>
+                        <input id="telefone" type="text" name="telefone" maxlength="13" placeholder="(xx) xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="celular">Celular:</label>
+                        <input id="celular" type="text" name="celular" placeholder="(xx) xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco">Endereço:</label>
+                        <input id="endereco" type="text" name="endereco" placeholder="Digite seu endereço" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="bairro">Bairro:</label>
+                        <input id="bairro" type="text" name="bairro" placeholder="Digite sua senha novamente" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cep">Cep:</label>
+                        <input id="cep" type="text" name="cep" maxlength="8" placeholder="Digite sua senha" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="complemento">Complemento:</label>
+                        <input id="complemento" type="text" name="complemento" placeholder="Digite sua senha novamente" >
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Planos:</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="100mb" type="radio" name="planos" value="100mb" >
+                            <label for="100mb">100MB R$69,90</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="200mb" type="radio" name="planos" value="200mb" >
+                            <label for="200mb">200MB R$99,90</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="300mb" type="radio" name="planos" value="300mb" >
+                            <label for="300mb">300MB R$119,90</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="500mb" type="radio" name="planos" value="500mb" >
+                            <label for="500mb">500MB R$139,90</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="900mb" type="radio" name="planos" value="900mb" >
+                            <label for="900mb">900MB R$199,90</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Vencimento:</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="vencimento" type="radio" name="vencimento" value="05" >
+                            <label for="05">5</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="vencimento" type="radio" name="vencimento" value="10" >
+                            <label for="10">10</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="vencimento" type="radio" name="vencimento" value="15" >
+                            <label for="15">15</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="vencimento" type="radio" name="vencimento" value="20" >
+                            <label for="20">20</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="vencimento" type="radio" name="vencimento" value="25" >
+                            <label for="25">25</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="vencimento" type="radio" name="vencimento" value="30" >
+                            <label for="30">30</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirm-button">
+                    <input type="submit" name="submit"  id="submit" value="Cadastrar" onclick="sendwpp();funcao1()" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function funcao1()
+            {
+        alert("Dados enviados com sucesso!");
+            }
+    </script>
+</body>
+</html>

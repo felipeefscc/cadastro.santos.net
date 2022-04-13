@@ -108,6 +108,7 @@ body {
     
 }
 
+
 .input-box input {
     margin: 0.3rem 0;
     padding: 0.8rem 1.2rem;
@@ -117,13 +118,16 @@ body {
     font-size: 0.8rem;
 }
 
+
 .input-box select {
-    padding: 0.8rem 0.8rem;
+    margin: 0.3rem 0;
+    padding: 0.8rem 2.5rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
 }
+
 
 .input-box input:hover {
     background-color: #dfdfdf;

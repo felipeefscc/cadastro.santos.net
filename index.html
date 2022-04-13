@@ -39,11 +39,6 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="date">Data de Nascimento:</label>
-                        <input id="date" type="date" name="date" >
-                    </div>
-
-                    <div class="input-box">
                         <label for="email">Email:</label>
                         <input id="email" type="email" name="email" placeholder="Digite seu e-mail" >
                     </div>
@@ -54,8 +49,8 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="celular">Celular:</label>
-                        <input id="celular" type="text" name="celular" placeholder="(xx) xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                        <label for="celular">Data de Nascimento:</label>
+                        <input id="date" type="date" name="date" placeholder="(xx) xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
                     </div>
 
                     <div class="input-box">
@@ -65,17 +60,34 @@
 
                     <div class="input-box">
                         <label for="bairro">Bairro:</label>
-                        <input id="bairro" type="text" name="bairro" placeholder="Digite sua senha novamente" >
+                        <input id="bairro" type="text" name="bairro" placeholder="Digite seu bairro" >
                     </div>
 
                     <div class="input-box">
                         <label for="cep">Cep:</label>
-                        <input id="cep" type="text" name="cep" maxlength="8" placeholder="Digite sua senha" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                        <input id="cep" type="text" name="cep" maxlength="8" placeholder="Digite seu cep" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="numero">Número:</label>
+                        <input id="numero" type="text" name="numero" placeholder="Digite o número da casa" >
                     </div>
 
                     <div class="input-box">
                         <label for="complemento">Complemento:</label>
-                        <input id="complemento" type="text" name="complemento" placeholder="Digite sua senha novamente" >
+                        <input id="complemento" type="text" name="complemento" placeholder="Digite seu complemento" >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="vencimento""><b>Data de Vencimento:</b></label>
+                        <select id="vencimento" name="vencimento">
+                            <option value="05">Dia - 05</option>
+                            <option value="10">Dia - 10</option>
+                            <option value="15">Dia - 15</option>
+                            <option value="20">Dia - 20</option>
+                            <option value="25">Dia - 25</option>
+                            <option value="30">Dia - 30</option>
+                        </select>
                     </div>
 
                     <div class="input-box">
@@ -88,23 +100,12 @@
                             <option value="300MB">300MB - R$99,90</option>
                             <option value="500MB">500MB - R$129,90</option>
                         </select>
-                        <br>
-                        
-    
-                        <label for="vencimento""><b>Data de Vencimento:</b></label>
-                        <select id="vencimento" name="vencimento">
-                            <option value="05">Dia - 05</option>
-                            <option value="10">Dia - 10</option>
-                            <option value="15">Dia - 15</option>
-                            <option value="20">Dia - 20</option>
-                            <option value="25">Dia - 25</option>
-                            <option value="30">Dia - 30</option>
-                        </select>
-                    </div>
-
+                     </div>
+                     
                 </div>
 
-                
+                <br>
+                <br>
 
                 <div class="confirm-button">
                     <input type="submit" name="submit"  id="submit" value="Cadastrar" onclick="sendwpp();funcao1()" />
